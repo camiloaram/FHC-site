@@ -24,7 +24,12 @@
 }
 
 .nav__link:hover {
-  opacity: 50%;
+  opacity: 0.5;
+}
+
+.nav__link:focus {
+  outline: 2px dashed #000;
+  outline-offset: 4px;
 }
 
 .nav__logo {
