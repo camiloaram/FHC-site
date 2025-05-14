@@ -7,7 +7,7 @@
     <meta name="author" content="Camilo Rodriguez" />
     <meta name="description" content="Familia Humilde Constructions LLC" />
     <meta name="keywords" content="HTML, CSS" />
-    <link rel="stylesheet" href="./pages/styles.css" />
+    <link rel="stylesheet" href="./pages/index.css" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <title>Familia Humilde Constructions LLC</title>
   </head>
@@ -17,9 +17,10 @@
         <nav class="nav">
           <img src="./images/FHC logo.png" alt="FHC logo" class="nav__logo" />
           <ul class="nav__links">
-            <li><a href="Work" class="nav__link">Work</a></li>
-            <li><a href="About" class="nav__link">About</a></li>
-            <li><a href="Contacts" class="nav__link">Contacts</a></li>
+            <li><a href="#home" class="nav__link">Home</a></li>
+            <li><a href="#services" class="nav__link">Services</a></li>
+            <li><a href="#work" class="nav__link">Work</a></li>
+            <li><a href="#contacts" class="nav__link">Contact</a></li>
           </ul>
         </nav>
         <h1 class="header__title">
@@ -35,25 +36,46 @@
           residential and commercial spaces. Licensed, bonded, and insured — we
           bring your vision to life with quality you can count on.
         </p>
-        <!-- <img
-          src="./images/bathroom-header-img.png"
-          alt="Modern kitchen design-build"
-          class="header__image"
-        /> -->
         <div class="header__footer">
           <div>
-            <p class="header__paragraphs">Hours:</p>
-            <p class="header__paragraphs">Monday-Friday (09:00-19:00)</p>
-            <p class="header__paragraphs">Saturday (10:00-17:00)</p>
-            <p class="header__paragraphs">Sunday (Closed)</p>
+            <button class="header__button header__button-primary" type="button">
+              Contact Us
+            </button>
+            <button
+              class="header__button header__button-secondary"
+              type="button"
+            >
+              Learn More
+            </button>
           </div>
-          <p class="header__paragraphs">
-            1815 South Carpenter Street, Chicago IL, 60608
-          </p>
         </div>
       </header>
       <main class="content">
-        <section class="profile page__section"></section>
+        <section class="profile page__section">
+          <div class="profile__info">
+            <h1 class="profile__title">Services</h1>
+            <p class="profile__description">
+              We offer comprehensive remodeling solutions
+            </p>
+          </div>
+        </section>
+        <section class="cards page__section">
+          <ul class="cards__list">
+            <template id="card-template">
+              <li class="card">
+                <img
+                  src="./images/bathroom-header-img.png"
+                  alt="Example of a bathroom remodel"
+                  class="card__image"
+                />
+                <div class="card__description">
+                  <h2 class="card__title">Whole Home Remodel</h2>
+                  <button class="card__page-button" type="button"></button>
+                </div>
+              </li>
+            </template>
+          </ul>
+        </section>
       </main>
       <footer class="footer page__section"></footer>
     </div>
