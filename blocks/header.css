@@ -1,6 +1,6 @@
 .header {
   box-sizing: border-box;
-  border-bottom: solid 1px rgb(84 84 84 / 0.7);
+  border-bottom: solid 1px rgba(84 84 84 / 0.7);
   height: 800px;
   display: flex;
   flex-direction: column;
@@ -72,31 +72,6 @@
   color: #a9a9a9;
 }
 
-.header__button {
-  padding: 12px 24px;
-  font-size: 16px;
-  font-weight: 600;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  margin: 10px 10px 0 0;
-  transition: background-color 0.3s ease;
-}
-
-.header__button--primary {
-  background-color: #000;
-  color: #fff;
-}
-
-.header__button--secondary {
-  background-color: #a8a8a8;
-  color: #000;
-}
-
-.header__button:hover {
-  opacity: 0.8;
-}
-
 @media screen and (max-width: 768px) {
   .header__title {
     font-size: 32px;
@@ -120,5 +95,23 @@
     flex-direction: column;
     gap: 20px;
     margin: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    height: auto; /* ✅ Let content determine height */
+    padding-bottom: 40px; /* Optional: adds breathing room */
+  }
+
+  .header__title,
+  .header__description {
+    margin: 20px;
+    text-align: center;
+  }
+
+  .header__span-accent {
+    font-size: 32px;
+    line-height: 40px;
   }
 }

@@ -18,7 +18,7 @@
           <ul class="nav__links">
             <li><a href="#home" class="nav__link">Home</a></li>
             <li><a href="#services" class="nav__link">Services</a></li>
-            <li><a href="#work" class="nav__link">Work</a></li>
+            <li><a href="#quote" class="nav__link">Get Quote</a></li>
             <li><a href="#contact" class="nav__link">Contact</a></li>
           </ul>
         </nav>
@@ -37,11 +37,12 @@
         </p>
       </header>
       <main class="content">
-        <section class="profile page__section" id="services">
-          <div class="profile__info">
-            <h1 class="profile__title">Services</h1>
-            <p class="profile__description">
-              We offer comprehensive remodeling solutions
+        <section class="services page__section" id="services">
+          <div class="services__intro">
+            <h2 class="services__title">Our Services</h2>
+            <p class="services__subtitle">
+              Comprehensive remodeling, renovation, and build-out solutions —
+              tailored to fit your space and vision.
             </p>
           </div>
         </section>
@@ -89,19 +90,74 @@
                 </p>
               </div>
             </li>
+            <li class="card">
+              <img
+                src="./images/electrical-FHC.png"
+                alt="Electrical Remodel"
+                class="card__image"
+              />
+              <div class="card__description">
+                <h2 class="card__title">Electrical Services</h2>
+                <p class="card__text">
+                  Whether you're upgrading an old panel, installing new
+                  lighting, or rewiring an entire space, Familia Humilde
+                  Constructions provides safe, code-compliant electrical work
+                  that powers your renovation the right way.
+                </p>
+              </div>
+            </li>
           </ul>
+        </section>
+        <section class="contact__form page__section" id="quote">
+          <h2 class="contact__form-title">Request a Quote</h2>
+          <p class="contact__form-subtitle">
+            Tell us about your project and we’ll get back to you within 24
+            hours.
+          </p>
+          <form class="contact__form-form" name="contact">
+            <input
+              type="text"
+              name="name"
+              placeholder="Full Name"
+              required
+              class="contact__form-input"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              required
+              class="contact__form-input"
+            />
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Project details..."
+              required
+              class="contact__form-textarea"
+            ></textarea>
+            <button type="submit" class="contact__form-button">
+              Send Message
+            </button>
+          </form>
         </section>
       </main>
       <footer class="footer page__section" id="contact">
         <h2 class="footer__title">Contact Us</h2>
         <address class="footer__address">
+          <p class="footer__text">Familia Humilde Constructions LLC</p>
           <p class="footer__text">
-            1815 South Carpenter Street, Chicago IL, 60608
+            1815 South Carpenter Street, Chicago IL 60608
           </p>
-          <p class="footer__text">Phone: (708) 653-0477</p>
-          <p class="footer__text">Email: buildwithfhc@gmail.com</p>
+          <p class="footer__text">
+            Phone: <a href="tel:7086530477">(708) 653-0477</a>
+          </p>
+          <p class="footer__text">
+            Email:
+            <a href="mailto:buildwithfhc@gmail.com">buildwithfhc@gmail.com</a>
+          </p>
         </address>
-        <p class="footer__text">
+        <p class="footer__copyright">
           © 2025 Familia Humilde Constructions LLC. All rights reserved.
         </p>
       </footer>
