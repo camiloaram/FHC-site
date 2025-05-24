@@ -79,3 +79,15 @@
     padding: 12px;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .contact__form-input,
+  .contact__form-textarea {
+    width: 100%;
+  }
+
+  .contact__form-button {
+    width: 100%;
+    text-align: center;
+  }
+}
